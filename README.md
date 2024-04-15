@@ -1,11 +1,13 @@
-# ![logosimple](https://github.com/souvikrajsingh/StacksAway/assets/81793119/d1c4cdb5-5083-4488-ad8f-248713bb67dd) 
+
+<img src="https://github.com/souvikrajsingh/StacksAway/assets/81793119/56687355-2d85-4db0-b493-096495ab2905" alt="stacksawaylogo" width="50px">
+
 
 # StacksAway Readme
 
 
 ## Overview
 
-Welcome to the StacksAway repository! This document will guide you through the process of cloning and setting up the project on your local system.
+Welcome to the StacksAway repository! Stacksaway utilizes React.js, a JavaScript library, for its frontend, integrating Contentful, a headless CMS for backend operations. All the content you see on the website is being fed using the contentful api
 
 ## Table of Contents
 
