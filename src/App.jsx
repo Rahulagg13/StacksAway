@@ -134,7 +134,7 @@ export default function App() {
               setSelectedMonths={setSelectedMonths}
             />
           </div>
-          <div className="order-1 md:order-2 col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-6 px-14 md:pl-0 md:pr-14 md:ml-[-80px] 2xl:ml-[-120px]">
+          <div className="order-1 md:order-2 col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-6 px-14 md:pl-0 md:pr-14 md:ml-36px 2xl:ml-4">
             {isLoading ? (
               <Skeleton />
             ) : (
