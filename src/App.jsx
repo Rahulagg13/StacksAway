@@ -76,7 +76,7 @@ export default function App() {
           </h2>
           <p className=" mx-auto text-lg text-center xl:text-h6 2xl:text-h5 max-w-[30ch] lg:max-w-[60ch]">
             Find Mentorships, Fellowships, Hackathons, and More in One Place to
-            enhance your experience in tech
+            enhance your experience in tech. Updated Weekly
           </p>
         </section>
 
