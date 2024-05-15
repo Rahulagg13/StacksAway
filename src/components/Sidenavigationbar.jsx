@@ -10,11 +10,11 @@ const Sidenavigationbar = ({ selectedMonths, setSelectedMonths }) => {
     }
   };
 
-  const handleSelectAll = (event) => {
-    if (event.target.checked) {
-      setSelectedMonths(months);
-    } else {
+  const handleSelectAll = () => {
+    if (selectedMonths.length === months.length) {
       setSelectedMonths([]);
+    } else {
+      setSelectedMonths(months);
     }
   };
 
@@ -46,16 +46,14 @@ const Sidenavigationbar = ({ selectedMonths, setSelectedMonths }) => {
         </button>
         {isMenuOpen && (
           <div className="left-0 w-full border-b-2 p-6 border-b-dim-gray bg-dark-charcoal rounded-xl border border-outline border-opacity-15">
-            <label className="p-2 flex items-center">
-              <input
-                type="checkbox"
-                id="selectAll"
-                name="selectAll"
-                onChange={handleSelectAll}
-                className="transition duration-200 ease-in-out hover:opacity-50"
-              />
-              <span className="pl-2">Select All</span>
-            </label>
+            <button
+              onClick={handleSelectAll}
+              className="w-32 :w-full text-bg  rounded-md  bg-gradient-to-br from-gradient to-primary p-2 flex items-center transition duration-200 ease-in-out hover:opacity-50"
+            >
+              <span className="pl-2 text-base font-bold 2xl:text-xl">
+                Select All
+              </span>
+            </button>
             {months.map((month) => (
               <label key={month} className="p-2 flex items-center">
                 <input
@@ -74,19 +72,17 @@ const Sidenavigationbar = ({ selectedMonths, setSelectedMonths }) => {
       </div>
       <div className="pl-8 md:pl-5 lg:pl-10 xl:pl-28 2xl:pl-32 font-bold text-lg text-light-gray sticky top-4 hidden md:block ">
         <div className="left-0 w-64 md:w-52 lg:w-64 xl:w-72 2xl:w-80  2xl:h-[750px] border-b-2 p-6 border-b-dim-gray bg-dark-charcoal rounded-xl border border-outline border-opacity-15">
-          <h2 className="text-center text-xl lg:text-2xl font-bold ">Months</h2>
-          <label className="p-2 flex items-center">
-            <input
-              type="checkbox"
-              id="selectAll"
-              name="selectAll"
-              onChange={handleSelectAll}
-              className="transition duration-200 ease-in-out hover:opacity-50"
-            />
-            <span className="pl-2 text-base 2xl:text-xl ">Select All</span>
-          </label>
+          <h2 className="text-center text-xl pb-6 lg:text-2xl font-bold ">
+            Months
+          </h2>
+          <button
+            onClick={handleSelectAll}
+            className="w-full text-bg rounded-md font-semibold bg-gradient-to-br from-gradient to-primary group sm:px-5 sm:py-1 px-3 py-2 flex items-center gap-x-1 flex-shrink-0 transition-all duration-200 text-base xl:text-h6 2xl:text-h5 justify-center"
+          >
+            <span>All</span>
+          </button>
           {months.map((month) => (
-            <label key={month} className="p-2 2xl:p-3 flex ">
+            <label key={month} className="p-2 2xl:p-3  flex ">
               <input
                 type="checkbox"
                 id={month}
