@@ -1,4 +1,3 @@
-import React from "react";
 import Logosimplewhite from "./Logosimplewhite";
 import Button from "./Buttons";
 import { Link } from "react-router-dom";

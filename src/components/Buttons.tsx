@@ -1,9 +1,15 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 
-export default function Button({ children, href }) {
+interface ButtonProps {
+  children: React.ReactNode;
+  href: string;
+  target?: string;
+}
+export default function Button({ children, href, target }: ButtonProps) {
   return (
     <a
+      target={target}
       href={href}
       className="text-bg rounded-lg font-semibold bg-gradient-to-br from-gradient to-primary group sm:px-5 sm:py-3 px-3 py-2 flex items-center gap-x-1 flex-shrink-0 transition-all duration-200 text-base xl:text-h6 2xl:text-h5"
     >

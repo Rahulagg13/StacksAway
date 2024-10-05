@@ -8,8 +8,7 @@ import Card from "./components/Card/Card";
 import Skeleton from "./components/Card/Skeleton.jsx";
 import PlusIcon from "./components/Plusicon";
 import getContent from "./utils/getContent.jsx";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import CardDetail from "./components/Card/CardDetail.jsx";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);

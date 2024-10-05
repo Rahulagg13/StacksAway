@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 const App = lazy(() => import("./App.jsx"));
-const About = lazy(() => import("./about/About.jsx"));
+const About = lazy(() => import("./about/About.tsx"));
 const CardDetail = lazy(() => import("./components/Card/CardDetail.jsx"));
 const NotFound = lazy(() => import("./components/404/NotFound.jsx"));
 const Legal = lazy(() => import("./legal/Legal.jsx"));

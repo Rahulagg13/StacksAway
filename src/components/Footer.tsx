@@ -7,8 +7,12 @@ import { Link as RouterLink } from "react-router-dom";
     Defining a Link Component that takes href and children as props.
     This component is used to create a link with an arrow icon that animates on hover.
   */
-
-const Link = ({ href, to, children }) => (
+interface LinkProps {
+  href?: string;
+  to?: string;
+  children: React.ReactNode;
+}
+const Link = ({ href, to, children }:LinkProps) => (
   <div className="group relative flex pb-2">
     {to ? (
       <RouterLink to={to}>{children}</RouterLink>

@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer";
 import { GoCheckCircle } from "react-icons/go";
 import { useState, useEffect } from "react";
@@ -10,7 +10,7 @@ const NavbarMemo = React.memo(Navbar);
 const FooterMemo = React.memo(Footer);
 
 function About() {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState<boolean>(false);
 
   /* Noted in Notion */
 
